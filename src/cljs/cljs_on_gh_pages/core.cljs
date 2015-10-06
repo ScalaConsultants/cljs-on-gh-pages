@@ -4,18 +4,10 @@
 
 (enable-console-print!)
 
-(defonce app-state (reagent/atom {:text "Sndrea"}))
-
-(defn blog-post
-  []
-  (m/md->reagent
-   "## <a name=\"why-would-you\" href=\"#why-would-you\">Why would you want that?</a>
-
-    **Writing** a blog post _with_ "))
-
 (defn page
   []
-  [:div [blog-post]])
+  [:div.console-container
+   [:div#console.console]])
 
 (defn ^:export main []
   (reagent/render [page]
