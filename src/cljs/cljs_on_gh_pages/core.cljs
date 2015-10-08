@@ -1,6 +1,5 @@
 (ns cljs-on-gh-pages.core
-  (:require [reagent.core :as reagent]
-            [cljs-on-gh-pages.markdown :as m]))
+  (:require [reagent.core :as reagent]))
 
 (enable-console-print!)
 
